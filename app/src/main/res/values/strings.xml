@@ -1,0 +1,62 @@
+<resources>
+
+    <string name="app_name">PulseTimer</string>
+
+    <string-array name="round_length_options">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="bell_interval_options">
+        <item>0</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+    </string-array>
+
+    <string-array name="rest_duration_options">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+    </string-array>
+
+    <string-array name="total_rounds_options">
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="date">Date</string>
+    <string name="rounds">Rounds</string>
+    <string name="duration">Duration</string>
+    <string name="round_length">⏱ Round Length</string>
+    <string name="bell_interval">🔔 Bell Interval</string>
+    <string name="rest_between_rounds">🛑 Rest Between Rounds</string>
+    <string name="total_rounds">🥊 Total Rounds</string>
+    <string name="back">Back</string>
+    <string name="delete_session">Delete Session</string>
+    <string name="_1_00">1:00</string>
+    <string name="round_1_of_1">Round: 1 of 1</string>
+    <string name="rest_15_sec">Rest: 15 sec</string>
+    <string name="start">Start</string>
+    <string name="pause">Pause</string>
+    <string name="reset">Reset</string>
+    <string name="end">End</string>
+    <string name="presets">Presets</string>
+    <string name="save_preset">Save Preset</string>
+    <string name="clear_presets">Clear Presets</string>
+    <string name="save">Save</string>
+    <string name="clear">Clear</string>
+    <string name="timer">Timer</string>
+    <string name="history">History</string>
+    <string name="pulse_timer_pro">Pulse Timer Pro</string>
+    <string name="training_configuration">Training Configuration</string>
+    <string name="clear_history">Clear History</string>
+
+</resources>

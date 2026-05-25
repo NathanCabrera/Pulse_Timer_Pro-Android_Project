@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#000000"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ==== TITLE ==== -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:text="@string/presets"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp" />
+
+    <!-- ==== SPINNER SECTION ==== -->
+    <FrameLayout
+        android:id="@+id/configFragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- ==== SAVE BUTTON ==== -->
+    <Button
+        android:id="@+id/btnSavePreset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save_preset"
+        android:background="@drawable/button_red"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="10dp" />
+
+    <!-- ==== DELETE BUTTON ==== -->
+    <Button
+        android:id="@+id/btnClearPresets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/clear_presets"
+        android:background="@drawable/button_outline"
+        android:textColor="#FFFFFF" />
+
+    <!-- ==== RECYCLER VIEW ==== -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerPresets"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp" />
+
+    <!-- ======== NAVBAR ======== -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <!-- ==== TIMER ==== -->
+        <Button
+            android:id="@+id/btnTimer"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/timer"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_outline"
+            android:layout_height="wrap_content" />
+
+        <!-- ==== PRESETS ==== -->
+        <Button
+            android:id="@+id/btnPresets"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/presets"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_outline"
+            android:layout_height="wrap_content" />
+
+        <!-- ==== HISTORY ==== -->
+        <Button
+            android:id="@+id/btnHistory"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/history"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_outline"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

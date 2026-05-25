@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ==== TITLE ==== -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:text="@string/presets"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <!-- ==== SPINNER SECTION ==== -->
+        <FrameLayout
+            android:id="@+id/configFragmentContainer"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <!-- ======== RIGHT SIDE ======== -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingStart="8dp">
+
+            <!-- ==== SAVE/CLEAR BUTTONS ==== -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnSavePreset"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/save"
+                    android:background="@drawable/button_red"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginEnd="4dp" />
+
+                <Button
+                    android:id="@+id/btnClearPresets"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/clear"
+                    android:background="@drawable/button_outline"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginStart="4dp" />
+
+            </LinearLayout>
+
+            <!-- ==== RECYCLER VIEW ==== -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerPresets"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingTop="8dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- ======== NAVBAR ======== -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:orientation="horizontal">
+
+        <!-- ==== TIMER ==== -->
+        <Button
+            android:id="@+id/btnTimer"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/timer"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_outline"
+            android:layout_height="wrap_content" />
+
+        <!-- ==== PRESETS ==== -->
+        <Button
+            android:id="@+id/btnPresets"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/presets"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_outline"
+            android:layout_height="wrap_content" />
+
+        <!-- ==== HISTORY ==== -->
+        <Button
+            android:id="@+id/btnHistory"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/history"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_outline"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

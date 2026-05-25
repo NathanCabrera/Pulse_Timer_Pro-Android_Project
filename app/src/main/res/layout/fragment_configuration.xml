@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="14dp"
+    android:gravity="center_vertical|center_horizontal">
+
+    <!-- ==== ROUND LENGTH ==== -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/text_outline"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/round_length"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinnerRoundLength"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_outline"
+            android:entries="@array/round_length_options"
+            android:padding="6dp" />
+
+    </LinearLayout>
+
+    <!-- ==== BELL INTERVAL ==== -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/text_outline"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/bell_interval"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinnerBell"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_outline"
+            android:entries="@array/bell_interval_options"
+            android:padding="6dp" />
+
+    </LinearLayout>
+
+    <!-- ==== REST BETWEEN ROUNDS ==== -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/text_outline"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/rest_between_rounds"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinnerRest"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_outline"
+            android:entries="@array/rest_duration_options"
+            android:padding="6dp" />
+
+    </LinearLayout>
+
+    <!-- ==== TOTAL ROUNDS ==== -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_outline"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/total_rounds"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinnerTotalRounds"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_outline"
+            android:entries="@array/total_rounds_options"
+            android:padding="6dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

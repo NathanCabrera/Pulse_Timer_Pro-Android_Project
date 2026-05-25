@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#000">
+
+    <!-- ==== BACK BUTTON ==== -->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_outline"
+        android:layout_marginBottom="12dp" />
+
+    <!-- ==== DATE ==== -->
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date"
+        android:textColor="#FFF"
+        android:textSize="22sp" />
+
+    <!-- ==== ROUNDS ==== -->
+    <TextView
+        android:id="@+id/tvRounds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rounds"
+        android:textColor="#FFF"
+        android:textSize="18sp" />
+
+    <!-- ==== DURATION ==== -->
+    <TextView
+        android:id="@+id/tvDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/duration"
+        android:textColor="#FFF"
+        android:textSize="18sp" />
+
+    <!-- ==== EXTRAS ==== -->
+    <TextView
+        android:id="@+id/tvExtra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:textSize="16sp" />
+
+    <!-- ==== DELETE BUTTON ==== -->
+    <Button
+        android:id="@+id/btnDeleteSession"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/delete_session"
+        android:background="@drawable/button_red"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>

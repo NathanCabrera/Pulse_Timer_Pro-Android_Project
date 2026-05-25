@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#000000">
+
+    <!-- ======== TITLE SECTION ======== -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- ==== TITLE ==== -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pulse_timer_pro"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <!-- ==== SUBTITLE ==== -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/training_configuration"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <!-- ==== TIMER ==== -->
+    <FrameLayout
+        android:id="@+id/timerFragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- ==== SPINNER SECTION ==== -->
+    <FrameLayout
+        android:id="@+id/configFragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- ======== NAVBAR ======== -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <!-- ==== TIMER ==== -->
+        <Button
+            android:id="@+id/btnTimer"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/timer"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_outline"
+            android:layout_height="wrap_content" />
+
+        <!-- ==== PRESETS ==== -->
+        <Button
+            android:id="@+id/btnPresets"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/presets"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_outline"
+            android:layout_height="wrap_content" />
+
+        <!-- ==== HISTORY ==== -->
+        <Button
+            android:id="@+id/btnHistory"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/history"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_outline"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>
